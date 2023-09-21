@@ -10,7 +10,7 @@ export class AiBackendCompanion{
         return ''
     }
     getUserMessage = (request)=>{
-        const cleanQuery = {...request.query, doc_should:undefined,doc_overwrite:undefined}
+        const cleanQuery = {...request.query, doc_should:undefined,doc_overwrite:undefined,doc_context:undefined}
         return `
         The javascript file should: ${request.query['doc_should']?? ""}
         The handler is handling the ${request.method} request for path ${request.path}
@@ -27,6 +27,7 @@ export class AiBackendCompanion{
     getSystemMessage = (request)=>{
         return `
         Your job is to produce a javascript file contents for the user's specification.
+        ${request.query['doc_context']?'The project context is: '+request.query['doc_context']:''}
         FYI, The javascript file job is to handle an http request and to return a proper response.
         you can have async functions
         answer only with the contents of the javascript file.
