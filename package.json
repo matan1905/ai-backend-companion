@@ -1,0 +1,22 @@
+{
+  "name": "ai-backend-companion",
+  "version": "0.0.1",
+  "description": "library to act as a backend, generating code as needed. contact me at https://iammatan.com for any question",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ai-backend-companion": "cli.js"
+  },
+  "files": ["cli.js","index.js","companion.js"],
+  "keywords": ["AI","GPT","Backend","prototyping"],
+  "author": "musets@iammatan.com",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "openai": "^4.8.0"
+  }
+}
