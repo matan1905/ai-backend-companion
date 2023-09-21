@@ -1,6 +1,6 @@
 {
   "name": "ai-backend-companion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "library to act as a backend, generating code as needed. contact me at https://iammatan.com for any question",
   "main": "index.js",
   "type": "module",
