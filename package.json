@@ -12,6 +12,9 @@
   },
   "files": ["cli.js","index.js","companion.js"],
   "keywords": ["AI","GPT","Backend","prototyping"],
+  "repository": {
+    "url": "https://github.com/matan1905/ai-backend-companion/"
+  },
   "author": "musets@iammatan.com",
   "license": "MIT",
   "dependencies": {
