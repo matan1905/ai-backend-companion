@@ -84,6 +84,11 @@ With AI Backend Companion, you can quickly and easily prototype your frontend ap
 
 For more information and options, you may [contact me](https://iammatan.com)
 
+
+## All URL Parameters:
+- doc_should - What should this request do
+- doc_overwrite - should it always generate a backend file or should it use existing files
+- doc_context - What is the overall context of what you're making
 ## License
 
 This project is licensed under the MIT License.
